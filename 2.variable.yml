@@ -16,5 +16,5 @@
     - name: Print URL
       ansible.builtin.debug:
         msg: URL - {{ URL }}
-        vars:
-          URL: vars.google.com
+      vars:
+        URL: vars.google.com
