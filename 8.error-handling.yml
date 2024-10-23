@@ -4,7 +4,7 @@
   tasks:
     - name: fail this command
       ansible.builtin.shell: exit 1
-      ignore_errors:
+      ignore_errors: true
 
     - name: print hello
       ansible.builtin.debug:
