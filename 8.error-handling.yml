@@ -1,0 +1,11 @@
+- name: Demo on loops
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: fail this command
+      ansible.builtin.shell: exit 1
+      ignore_errors:
+
+    - name: print hello
+      ansible.builtin.debug:
+        msg: hello
