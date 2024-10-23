@@ -6,6 +6,6 @@
   ansible.builtin.debug:
     msg: hello
 
-- name: print example.com
+- name: print example
   ansible.builtin.debug:
     msg: example - {{ example.com }}
