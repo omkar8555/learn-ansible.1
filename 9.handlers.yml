@@ -4,6 +4,8 @@
   tasks:
     - name: list
       ansible.builtin.shell: ls
+      notify:
+        - say hello
 
   handlers:
     - name: say hello
