@@ -25,3 +25,14 @@
   connection: local
   roles:
     - sample
+
+
+- name: demo on register variable
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+    - name: check package
+      ansible.builtin.dnf:
+        name: zlib
+        state: installed
