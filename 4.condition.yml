@@ -1,0 +1,13 @@
+- name: demo on condition
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: print OS Redhat
+      ansible.builtin.debug:
+        msg: redhat
+      when: OS == "redhat"
+
+    - name: print OS ubuntu
+      ansible.builtin.debug:
+        msg: ubuntu
+      when: OS == "ubuntu"
