@@ -13,7 +13,7 @@
       when: os == "ubuntu"
 
     - name: get remainder
-      ansible.builtin.shell: echo $(({{ number }}%2))
+      ansible.builtin.shell: echo $(({{number}}%2))
       register: remainder
 
     - name: print even number
