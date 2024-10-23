@@ -18,3 +18,10 @@
         msg: URL - {{ URL }}
       vars:
         URL: vars.google.com
+
+
+- name: Demo on roles variables
+  hosts: localhost
+  connection: local
+  roles:
+    - sample
