@@ -12,11 +12,11 @@
         msg: Ubuntu
       when: os == "ubuntu"
 
-    - name: get remainder
+    - name: get reminder
       ansible.builtin.shell: echo $(({{number}}%2))
-      register: remainder
+      register: reminder
 
     - name: print even number
       ansible.builtin.debug:
         msg: number {{ number }} is even
-      when: remainder.stdout == "0"
+      when: reminder.stdout == "0"
